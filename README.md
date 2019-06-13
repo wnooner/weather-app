@@ -1,2 +1,2 @@
 # weather-app
-Weather app built in 2 days with react
+Weather app built with react
