@@ -1,0 +1,66 @@
+.App {
+	height: 100vh;
+	width: 100vw;
+    position: relative;
+}
+html, body, #root, #app, #app>div {
+	height: 100vh;
+	width: 100vw;
+  }
+.App.dark {
+	background: rgba(8, 0, 0, 0.774);
+	color: #F3F2ED;;
+	transition: 0.4s all;
+}
+
+.App.light {
+	background-color: #F3F2ED;
+	color: rgba(26, 24, 24, 0.836);
+	transition: 0.4s all;
+}
+
+.app-btn {
+	margin-top: 1rem;
+	width: 8rem;
+	border-radius: 100rem;
+	text-align: center;
+	cursor: pointer;
+    padding: .5rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+	cursor: pointer;
+	outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
+}
+
+.panel-container {
+	position: relative;
+	height:100%;
+	width:100%;
+}
+
+.input-container {
+	width:100%;
+	display: flex;
+	position: relative;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 550px) {
+	.app-btn {
+		border-radius: 10rem;
+		margin-left: none;
+		
+		margin-right: 1rem;
+		padding: .5rem;
+		width: 8rem;
+		height: 3rem;
+		padding: none;
+		text-align: center;
+		cursor: pointer;
+		outline-style:none;
+		box-shadow:none;
+		border-color:transparent;
+	}
+}

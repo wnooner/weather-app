@@ -1,0 +1,199 @@
+.panel-current { 
+    position: relative;
+    top: 25%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(160deg, rgba(136,209,252,1) 0%, rgba(84,69,253,1) 100%);
+    border-radius: 8px;
+    height: 26rem;
+    max-width: 20rem;
+    padding: 15px 25px;
+    margin: none;
+    -webkit-box-shadow: 3px 6px 13px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 6px 13px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 6px 13px 0px rgba(0,0,0,0.75);
+  }
+
+  .panel-img {
+    width: 70%;
+    height: 70%;
+  }
+  
+  .panel-day {
+    font-size: 2rem;
+    margin-bottom: 4px;
+    text-align: left;
+  }
+
+  .panel-line {
+    border-bottom: 2px solid #fff;
+    width: 100%;
+  }
+  
+  .panel-temperature {
+    font-size: 2rem;
+    margin-top: .8rem;
+    text-align: left;
+  }
+
+  .panel-temperature .small {
+    font-size: 1rem;
+  }
+
+  .panel-city {
+    font-size: 2rem;
+    margin-top: .8rem;
+    width: 100%;
+  }
+
+  .panel-weather {
+    font-size: 2rem;
+  }
+
+  .panel-row {
+    width: 100%;
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  @media (max-width:1200px) and (min-width:400px) {
+    .panel-current {
+      position: relative;
+      top: 10%;
+      left: 39%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(160deg, rgba(136,209,252,1) 0%, rgba(84,69,253,1) 100%);
+      border-radius: 8px;
+      height: 15rem;
+      max-width: 10rem;
+      padding: 15px 25px;
+      margin: none;
+      -webkit-box-shadow: 3px 6px 13px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 3px 6px 13px 0px rgba(0,0,0,0.75);
+      box-shadow: 3px 6px 13px 0px rgba(0,0,0,0.75);
+    }
+  
+    .panel-img {
+      height: 50%;
+      width: 50%;
+    }
+  
+    .panel-day {
+      font-size: 1rem;
+      margin-bottom: 4px;
+      text-align: left;
+    }
+  
+    .panel-line {
+      border-bottom: 2px solid #fff;
+      width: 100%;
+    }
+    
+    .panel-temperature {
+      font-size: 1rem;
+      margin-top: 10px;
+      text-align: left;
+    }
+  
+    .panel-temperature .small {
+      font-size: .7rem;
+    }
+  
+    .panel-city {
+      font-size: 1rem;
+      margin-top: 4px;
+      width: 100%;
+    }
+  
+    .panel-weather {
+      font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .panel-current {
+    position: relative;
+    top: 10%;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(160deg, rgba(136,209,252,1) 0%, rgba(84,69,253,1) 100%);
+    border-radius: 8px;
+    height: 16rem;
+    max-width: 10rem;
+    padding: 15px 25px;
+    margin: none;
+    -webkit-box-shadow: 3px 6px 13px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 6px 13px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 6px 13px 0px rgba(0,0,0,0.75);
+  }
+
+  .panel-img {
+    height: 50%;
+    width: 50%;
+  }
+
+  .panel-day {
+    font-size: 1rem;
+    margin-bottom: 4px;
+    text-align: left;
+  }
+
+  .panel-line {
+    border-bottom: 2px solid #fff;
+    width: 100%;
+  }
+  
+  .panel-temperature {
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .panel-temperature .small {
+    font-size: .7rem;
+  }
+
+  .panel-city {
+    font-size: 1rem;
+    margin-top: 4px;
+    width: 100%;
+  }
+
+  .panel-weather {
+    font-size: 1rem;
+  }
+}
+
+/*
+BACKGROUND COLORS
+*/
+
+.is-Clear {
+  background: linear-gradient(160deg, rgba(247,183,51,1) 0%, rgba(252,74,26,1) 100%);
+}
+
+.is-Rain {
+  background: linear-gradient(18deg, rgba(0,110,213,1) 0%, rgb(23, 84, 124) 74%); 
+}
+
+.is-Sleet {
+  background: linear-gradient(18deg, rgba(0,110,213,1) 0%, rgba(162,171,177,1) 74%); 
+}
+
+.is-Clouds {
+  background: linear-gradient(18deg, rgba(0,175,245,1) 0%, rgba(0,223,247,1) 74%); 
+}
+  

@@ -1,0 +1,34 @@
+form {
+    color: #eee;
+}
+
+.input-btn {
+    width: 8rem;
+    padding: .5rem;
+    margin-left: 1rem;
+    border-radius: 100rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
+}
+
+.input-bar {
+    outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
+    padding: .5rem;
+    background-color: #ccc;
+    border-radius: 100rem;
+}
+
+@media only screen and (max-width: 400px) {
+    form {
+		margin-top: 1rem;
+    }
+}
+
+@media (max-width:500px) and (min-width:400px) {
+   
+}

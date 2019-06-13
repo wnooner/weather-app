@@ -1,0 +1,215 @@
+.week-panel {
+  left: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(160deg, rgba(136,209,252,1) 0%, rgba(84,69,253,1) 100%);
+  border-radius: 8px;
+  height: 10rem;
+  min-width: 7rem;
+  padding: 5px 1rem;
+  margin-right: 1rem;
+  -webkit-box-shadow: 3px 6px 13px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 6px 13px 0px rgba(0,0,0,0.75);
+  box-shadow: 3px 6px 13px 0px rgba(0,0,0,0.75);
+  animation-name: moveInBottom;
+  animation-duration: .4s;
+}
+
+@media only screen and (max-width: 800px) {
+  .week-panel {
+    /* overflow: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(160deg, rgba(136,209,252,1) 0%, rgba(84,69,253,1) 100%);
+    border-radius: 8px;
+    height: 4rem;
+    min-width: 3rem;
+    padding: 5px 1rem;
+    margin-right: 1rem;
+    -webkit-box-shadow: 3px 6px 13px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 6px 13px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 6px 13px 0px rgba(0,0,0,0.75);
+  }
+
+  .week-panel_day {
+    width: 100%;
+    font-size: 1rem;
+    margin: none;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .week-panel_day_2 {
+    display: none;
+  }
+  
+  .week-panel_line {
+    display: none;
+  }
+  
+  .week-panel_temperature {
+    display: none;
+  }
+  
+  .week-panel_row {
+    width: 100%;
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .small {
+    font-size: 1rem;
+  }
+  
+  .week-panel_weather {
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .week-panel-img {
+    width: 30%;
+    height: 30%;
+  }
+}
+@media (max-width:1200px) and (min-width:800px) {
+  .week-panel {
+    /* overflow: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(160deg, rgba(136,209,252,1) 0%, rgba(84,69,253,1) 100%);
+    border-radius: 8px;
+    height: 4rem;
+    width: 3.5rem;
+    padding: 5px 1rem;
+    margin-right: 1rem;
+    -webkit-box-shadow: 3px 6px 13px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 6px 13px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 6px 13px 0px rgba(0,0,0,0.75);
+  }
+
+  .week-panel-img {
+    width: 40%;
+    height: 40%;
+  }
+
+  .week-panel_day {
+    width: 100%;
+    font-size: .6rem;
+    margin: none;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .week-panel_day_2 {
+    display: none;
+  }
+  
+  .week-panel_line {
+    display: none;
+  }
+  
+  .week-panel_temperature {
+    display: none;
+  }
+  
+  .week-panel_row {
+    width: 100%;
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .week-small {
+    font-size: 1rem;
+  }
+  
+  .week-panel_weather {
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+}  
+
+/* @media (max-width:800px) and (min-width:400px) {
+
+} */
+@media (min-width: 1200px) {
+  .week-panel_day {
+    width: 100%;
+    text-align: center;
+    font-size: .8rem;
+    margin-bottom: 40px;
+    white-space: nowrap;
+  }
+  
+  .week-panel_line {
+    display:none;
+  }
+
+  .week-panel-img {
+    width: 55%;
+    height: 55%;
+  }
+  
+  .week-panel_temperature {
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+  .week-panel_row {
+    width: 100%;
+    height: 8px;
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .small {
+    font-size: .8rem;
+  }
+  
+  .week-panel_weather {
+    font-size: 1rem;
+  }
+}
+
+.is-Clear {
+  background: linear-gradient(160deg, rgba(247,183,51,1) 0%, rgba(252,74,26,1) 100%);
+}
+
+.is-Rain {
+  background: linear-gradient(18deg, rgba(0,110,213,1) 0%, rgb(23, 84, 124) 74%); 
+}
+
+.is-Sleet {
+  background: linear-gradient(18deg, rgba(0,110,213,1) 0%, rgba(162,171,177,1) 74%); 
+}
+
+.is-Clouds {
+  background: linear-gradient(18deg, rgba(0,175,245,1) 0%, rgba(0,223,247,1) 74%); 
+}
+
+@keyframes moveInBottom {
+  0% {
+      opacity: 0;
+      transform: translateY(3rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+} 
